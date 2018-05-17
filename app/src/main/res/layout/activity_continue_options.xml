@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1f2b78"
+    tools:context="com.inception.harmeetkaur.notessharing.ContinueOptions">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share notes in your class"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="70dp"
+        android:id="@+id/notes"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/groupnotes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/notes"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue AS User"
+        android:background="#379835"
+        android:onClick="user_login"
+        android:layout_above="@+id/continue_as_admin"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue AS Admin"
+        android:id="@+id/continue_as_admin"
+        android:onClick="admin_login"
+        android:background="#10a0cc"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical"
+    tools:context="com.inception.harmeetkaur.notessharing.feedback">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Enter feedback details to send to the Admin :"
+    android:textSize="25dp"
+    android:textColor="#000"
+    android:layout_marginTop="45dp"
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/rounded_rect"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:id="@+id/feedbackk"
+        android:hint="feedback details....."
+        android:gravity="start"
+        />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:textColor="#fff"
+        android:layout_marginTop="15dp"
+        android:background="#1f2b78"
+        android:layout_marginLeft="98dp"
+        android:onClick="done1"/>
+</LinearLayout>

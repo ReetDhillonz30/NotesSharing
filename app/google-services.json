@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "936400074502",
+    "firebase_url": "https://notessharin.firebaseio.com",
+    "project_id": "notessharin",
+    "storage_bucket": "notessharin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936400074502:android:38d47c40142697dd",
+        "android_client_info": {
+          "package_name": "com.inception.harmeetkaur.notessharing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "936400074502-hidfb463ud083tco0pfu54lqijlbn79n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFUzWr8_zchqG7eoU6c-0nTkakCFZQtcw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

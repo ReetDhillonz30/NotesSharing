@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context="com.inception.harmeetkaur.notessharing.Join_1">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/notes1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/image_notes"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/image_notes"
+        android:background="@drawable/rounded_rect"
+        android:hint="Enter Classname"
+        android:id="@+id/class_name1"
+        android:padding="5dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_rect"
+        android:hint="Enter Passcode"
+        android:layout_below="@+id/class_name1"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:id="@+id/pass_1"/>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_below="@id/pass_1"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="#1f2b78"
+        android:onClick="join_group"
+        />
+
+</RelativeLayout>

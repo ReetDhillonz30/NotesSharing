@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context="com.inception.harmeetkaur.notessharing.Admin_addingnotes">
+    <ImageView
+        android:id="@+id/notes_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+        android:src="@drawable/notes4" />
+
+    <EditText android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notes_4"
+        android:hint="Enter Subject"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="10dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:hint="Notes Description"
+        android:padding="5dp" />
+
+    <Spinner
+        android:id="@+id/department_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:layout_marginTop="10dp"
+        android:hint="Department"
+        android:padding="5dp" >
+    </Spinner>
+    <Spinner
+        android:id="@+id/session_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/department_spinner"
+        android:layout_marginTop="10dp"
+        android:hint="Session"
+        android:padding="5dp" >
+    </Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Notes Type"
+        android:layout_marginTop="10dp"
+        android:id="@+id/notes_type_heading"
+        android:layout_below="@+id/session_spinner"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notes_type_heading"
+        android:id="@+id/select_notes_type"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PDF"
+            android:id="@+id/pdf_radio_btn"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VIDEO"
+            android:id="@+id/video_radio_btn"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IMAGE"
+            android:id="@+id/image_radio_btn"
+            />
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select_notes_type"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#1f2b78"
+        android:text="NEXT"
+        android:onClick="upload_notes"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        />
+</RelativeLayout>

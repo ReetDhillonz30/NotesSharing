@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.inception.harmeetkaur.notessharing.Details">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/add"
+        android:id="@+id/image_2"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_rect"
+        android:hint="Enter Name"
+        android:padding="5dp"
+        android:maxLines="1"
+        android:layout_below="@id/image_2"
+        android:imeOptions="actionNext"
+        android:id="@+id/name_1"
+        android:singleLine="true"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_rect"
+        android:hint="Enter classname"
+        android:padding="5dp"
+        android:maxLines="1"
+        android:layout_below="@id/name_1"
+        android:imeOptions="actionNext"
+        android:layout_marginTop="10dp"
+        android:id="@+id/class_name"
+        android:singleLine="true"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_rect"
+        android:hint="Enter Department name"
+        android:padding="5dp"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:layout_marginTop="10dp"
+        android:id="@+id/dept_1"
+        android:layout_below="@+id/class_name"
+        android:singleLine="true"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_rect"
+        android:hint="Enter Session"
+        android:layout_below="@id/dept_1"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:maxLines="1"
+        android:id="@+id/sesion_1"
+        android:imeOptions="actionNext"
+        android:singleLine="true"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_rect"
+        android:hint="Enter Contact No."
+        android:padding="5dp"
+        android:layout_below="@id/sesion_1"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:id="@+id/cont_no_1"
+        android:singleLine="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_rect"
+        android:hint="passcode"
+        android:padding="5dp"
+        android:layout_below="@id/cont_no_1"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:id="@+id/passcode"
+        android:singleLine="true"/>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_below="@id/passcode"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="#1f2b78"
+        android:onClick="save"/>
+</RelativeLayout>
+
+
+
