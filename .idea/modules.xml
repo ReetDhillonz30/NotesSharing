@@ -3,9 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/NotesSharing.iml" filepath="$PROJECT_DIR$/NotesSharing.iml" />
-      <module fileurl="file://C:\Users\INDER\Desktop\NotesSharing\NotesSharing.iml" filepath="C:\Users\INDER\Desktop\NotesSharing\NotesSharing.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\INDER\Desktop\NotesSharing\app\app.iml" filepath="C:\Users\INDER\Desktop\NotesSharing\app\app.iml" />
     </modules>
   </component>
 </project>
